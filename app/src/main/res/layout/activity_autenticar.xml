@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_verde"
+    android:padding="20dp"
+    android:layout_gravity="center"
+    android:foregroundGravity="center"
+    tools:context=".Autenticar">
+
+
+
+    <ProgressBar
+        android:id="@+id/espera"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="163dp"
+        android:layout_height="153dp"
+        android:layout_gravity="center"
+        android:outlineAmbientShadowColor="@color/actionbar_azul"
+        android:outlineSpotShadowColor="@color/actionbar_azul"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:visibility="invisible"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="INICIO DE SESIÓN Y REGISTRO"
+        android:textColor="@color/actionbar_verde"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/etCorreo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.843" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etCorreo"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:drawableLeft="@drawable/ic_perfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_transparente"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CORREO"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@color/actionbar_verde"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.413" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPass"
+        android:drawableLeft="@drawable/ic_baseline_https_24"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/btn_transparente"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="CONTRASEÑA"
+        android:inputType="textEmailAddress"
+        android:password="true"
+        android:singleLine="true"
+        android:textColor="@color/actionbar_verde"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etCorreo"
+        app:layout_constraintTop_toBottomOf="@+id/etCorreo"
+        app:strokeColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnIng"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="@color/boton_verde"
+        android:text="Iniciar Sesión"
+        android:textColor="@color/actionbar_verde"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPass"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/actionbar_verde" />
+
+    <Button
+        android:id="@+id/btnReg"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/gris_claro"
+        android:text="Registrarse"
+        android:textColor="@color/gris"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIng"
+        app:strokeColor="@color/gris" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

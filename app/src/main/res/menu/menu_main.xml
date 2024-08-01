@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/conf_menu"
+        android:icon="@drawable/config_icon"
+        android:title="Configuración "
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/perfil_menu"
+        android:icon="@drawable/perfil_icon"
+        android:title="Perfil"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/irmapa"
+        android:icon="@drawable/mapaicon"
+        android:title="Mapa"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/infoNav"
+        android:icon="@drawable/escuelainfo"
+        android:title="Escuela"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/not_menu"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Salir"
+        app:showAsAction="always"/>
+
+    <item
+    android:id="@+id/salir_menu"
+    android:icon="@drawable/salir_icon"
+    android:title="Salir"
+    app:showAsAction="always"/>
+</menu>

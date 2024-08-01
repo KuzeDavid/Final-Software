@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_verde"
+    tools:context=".btn_edit">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Configuración de \n botones"
+        android:gravity="center"
+        android:textColor="@color/actionbar_verde"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.124" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/elm_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="19dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:backgroundTint="@color/verde"
+        app:layout_constraintEnd_toStartOf="@+id/msj2"
+        app:layout_constraintStart_toEndOf="@+id/msj1"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddCont2"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/elm_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:backgroundTint="@color/verde"
+        app:layout_constraintEnd_toStartOf="@+id/msj1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddCont1"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    <TextView
+        android:id="@+id/msj2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/btn_transparente"
+        app:layout_constraintBottom_toBottomOf="@+id/msj1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/elm_btn2"
+        app:layout_constraintTop_toTopOf="@+id/elm_btn2" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddCont2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="19dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/gris_claro"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/btn2"
+        app:layout_constraintStart_toEndOf="@+id/btn1"
+        app:layout_constraintTop_toTopOf="@+id/btnAddCont1"
+        app:srcCompat="@drawable/ic_baseline_contact_phone_24" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:shadowColor="@color/black"
+        android:textColor="@color/fondo_verde"
+        android:backgroundTint="@color/actionbar_verde2"
+        app:layout_constraintBottom_toBottomOf="@+id/btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAddCont2"
+        app:layout_constraintTop_toTopOf="@+id/btnAddCont2" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="1"
+        android:textColor="@color/fondo_verde"
+        android:backgroundTint="@color/actionbar_verde2"
+        android:shadowColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddCont1"
+        app:layout_constraintEnd_toStartOf="@+id/btnAddCont2"
+        app:layout_constraintStart_toEndOf="@+id/btnAddCont1"
+        app:layout_constraintTop_toTopOf="@+id/btnAddCont1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAddCont1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="360dp"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/gris_claro"
+        android:clickable="true"
+        android:foregroundGravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/btn1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_contact_phone_24" />
+
+    <TextView
+        android:id="@+id/msj1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="20dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="@drawable/btn_transparente"
+        app:layout_constraintBottom_toBottomOf="@+id/elm_btn1"
+        app:layout_constraintEnd_toStartOf="@+id/elm_btn2"
+        app:layout_constraintStart_toEndOf="@+id/elm_btn1"
+        app:layout_constraintTop_toTopOf="@+id/elm_btn1" />
+
+    <Button
+        android:id="@+id/btnSigPr"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="81dp"
+        android:clickable="true"
+        android:text="Guardar"
+        android:backgroundTint="@color/verde"
+        android:textColor="@color/actionbar_verde"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor="@color/actionbar_verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="Inicio_app.Tratamiento_Datos">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:alpha="0.5"
+        android:text="Autorizo, teniendo en cuenta la normativa vigente de protección de datos personales, incluyendo la ley 1581 de 2012 y demás normas afines, de manera libre y voluntaria a la aplicación SCHOOLISH para realizar el tratamiento de los datos personales proporcionados dentro de la aplicación. Entiendo que estos datos serán utilizados exclusivamente para el funcionamiento normal de la aplicación y que no serán tratados ni transferidos fuera de la misma, garantizando la confidencialidad y seguridad de los datos proporcionados. Asimismo, certifico la veracidad de los datos suministrados y me comprometo a notificar de forma oportuna cualquier cambio o actualización de los mismos. Acepto que la aplicación SCHOOLISH pueda enviar comunicaciones relacionadas con el funcionamiento de la aplicación y otros servicios relacionados. Declaro haber leído y comprendido la política de privacidad y protección de datos de SCHOOLISH, la cual establece los procedimientos y medidas adoptadas para garantizar la seguridad y confidencialidad de mis datos personales. Esta autorización tiene validez durante el tiempo de utilización de la aplicación SCHOOLISH y podrá ser revocada en cualquier momento mediante solicitud escrita dirigida a la administración de la aplicación."
+        app:layout_constraintBottom_toTopOf="@+id/btnAutorizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <Button
+        android:id="@+id/btncont"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:text="Continuar"
+        style="?attr/materialButtonOutlinedStyle"
+        app:strokeColor = "@color/gris"
+        app:cornerRadius = "20dp"
+        android:textColor="@color/gris"
+        android:backgroundTint="@color/gris_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/btnAutorizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="72dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:alpha="0.5"
+        android:textStyle="bold"
+        android:text="Autorizo tratamiento de datos personales"
+        app:layout_constraintBottom_toTopOf="@+id/btncont"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

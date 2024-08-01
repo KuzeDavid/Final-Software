@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "144293536586",
+    "project_id": "schoolish-ee06f",
+    "storage_bucket": "schoolish-ee06f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144293536586:android:bd91e7ea30b9954481d7b3",
+        "android_client_info": {
+          "package_name": "com.proyecto.ebabotndepnico"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144293536586-veqmp4ebmu8hl1v0aaf6imsvghovp7tt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqOIzMewppoffMsVuTPMOhgZs_5MsbJqg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144293536586-veqmp4ebmu8hl1v0aaf6imsvghovp7tt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
